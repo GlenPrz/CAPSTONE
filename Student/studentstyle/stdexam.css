@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}  .Exam_smallcontainer {
+            width: 100%;
+            margin: 0 auto;
+            padding: 50px;
+            overflow: hidden;
+    }
+
+   .question {
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            margin-bottom: 25px;
+        }
+
+        .options label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .error {
+            color: red;
+            font-style: italic;
+        }
+
+        hr.exam_Hr {
+            border: none;
+            height: 1.3px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }label{
+            font-size: 32px;
+
+        }h4{
+            font-size: 32px;
+
+        }h1{
+            font-size: 40px;
+        }h2{
+            font-size: 42px;
+            text-align: center;
+            color: green;
+        }h3{
+            font-weight: normal;
+            font-size: 32px;
+        }
+        header {
+background-color: green;
+color: #fff;
+padding: 5px;
+text-align: center;
+width: 100%;
+}
+.examBTS_logo{
+      margin: 1% 2% 1%;
+      width: 70px;
+      height: 85px;
+}
+    
+    .exam_Container {
+        width: 84%;
+        height: 67%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        margin: 0 auto;
+        padding: 10px auto;
+        overflow-x: auto;
+        overflow-y: scroll;
+        border-radius: 10px;
+    }
+    
+    
+    .Exambutton {
+        display: inline-block;
+        margin-top:1%;
+        margin-bottom:1%;
+        width: 155px;
+        height: 45px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        line-height: 43px;
+        vertical-align: middle;
+        font-family: 'Inter', sans-serif;
+        border: none;
+    }
+    
+    .quit {
+        background-color: red;
+        color: white;
+        margin-left: 8%;
+    }
+
+    .submit {
+        background-color: green;
+        color: white;
+        margin-right: 8%;
+        float: right;
+    }
+    
+    .submit:hover{
+        background-color: #042e04;
+    }
+        
+    .quit:hover{
+        background-color: #630202;
+    }
+    

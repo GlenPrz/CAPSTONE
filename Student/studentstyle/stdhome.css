@@ -1,0 +1,515 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* CSS */
+.buttonSearch-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.0rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin-bottom:2%;
+}
+
+.buttonSearch-5:hover,
+.buttonSearch-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.buttonSearch-5:hover {
+  transform: translateY(-1px);
+}
+
+.buttonSearch-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.buttonReset-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: Maroon;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.0rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin-bottom:2%;
+}
+
+.buttonReset-5:hover,
+.buttonSearch-5:focus {
+  background-color: Maroon;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.buttonReset-5:hover {
+  transform: translateY(-1px);
+}
+
+.buttonReset-5:active {
+  background-color: Maroon;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+#Modal_AnnouncementHistory {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 30px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content_AnnouncementHistory {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-100px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-100px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close_AnnouncementHistory {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close_AnnouncementHistory:hover,
+.close_AnnouncementHistory:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header_AnnouncementHistory {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body_AnnouncementHistory {padding: 2px 16px;}
+
+.modal-footer_AnnouncementHistory {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .Img_design_slider {
+        border-radius: 2px;
+        width: 100%;
+        height: 520px;
+    }
+    .nav_links a:nth-child(1) {
+        background-color: green;
+        border-radius: 10px;
+        color: white;
+        width: 100%;
+    }
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    .main_content {
+        width: 70%;
+        height: 100%;
+        float: left;
+        margin-left: 22%;
+        display: block;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 50px;
+
+
+    }
+
+    .nav_student {
+        float: left;
+        width: 20%;
+        background-color: #f7fff5;
+        box-shadow: 2px 7px 8px #E4F5E4;
+        gap: 2%;
+        margin-right: .5%;
+        top: 0;
+        /* Stick to the top of the viewport */
+        left: 0;
+        /* Stick to the left edge of the viewport */
+        position: fixed;
+    }
+
+    .second-row-content {
+        width: 100%;
+        height: 50%;
+        display: block;
+
+    }
+
+    .Tdc_Pdc_Con {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        column-gap: 5%;
+        padding: 20px;
+    }
+
+    .Announcement {
+        width: 100%;
+        height: 30%;
+        display: block;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    .progress_container {
+        height: 50%;
+        width: 80%;
+        text-align: left;
+    }
+
+    .progress-bar-title {}
+
+    .circle_prog_con {
+        display: flex;
+        border-radius: 5px;
+        width: 50%;
+    }
+
+    .progress-bar-container {
+        width: 45%;
+        margin: 10px;
+
+    }
+
+    .progress-bar {
+        position: relative;
+        width: 30%;
+        background-color: #ddd;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .progress {
+        height: 40px;
+        background-color: #4CAF50;
+        color: #fff;
+        line-height: 40px;
+        text-align: center;
+
+    }
+
+    .progress-value {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .progress_sirkol1 {
+        position: relative;
+        text-align: left;
+        width: 100%;
+        height: 100%;
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+
+    .progress_sirkol2 {
+        position: relative;
+        text-align: left;
+        width: 100%;
+        height: 100%;
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+
+    .progress_sirkol3 {
+        position: relative;
+        text-align: left;
+        width: 100%;
+        height: 100%;
+        margin-left: 5%;
+        margin-top: 10%;
+
+    }
+
+    .progress-bar-svg,
+    .progress2-bar-svg,
+    .progress3-bar-svg {
+        transform: rotate(-90deg);
+    }
+
+    .progress-bar-track {
+        fill: none;
+        stroke: #eaeaea;
+        stroke-width: 38px;
+
+        position: relative;
+        margin-top: 50%;
+    }
+
+    .progress-bar-fill,
+    .progress2-bar-fill,
+    .progress3-bar-fill {
+        fill: none;
+        stroke: #31e060;
+        stroke-width: 38;
+        stroke-dasharray: 630;
+        transition: stroke-dashoffset 0.3s ease;
+    }
+
+    .progress2-bar-fill {
+        stroke: #e8cc2e;
+
+    }
+
+    .progress3-bar-fill {
+        stroke: #ed422f;
+    }
+
+    .progress-bar-text,
+    .progress2-bar-text,
+    .progress3-bar-text {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        /* Adjust the font size */
+        font-weight: bold;
+        color: #000;
+    }
+
+    .progress-bar-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 30px;
+
+    }
+
+    .Score {
+        width: 20%;
+        margin: 1%;
+        margin-top: 4%;
+    }
+
+    .Score table {
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+        margin-right: 50%;
+    }
+
+    .slideshow-container {
+        max-width: 800px;
+        position: relative;
+        margin: auto;
+    }
+
+    .StudSched {
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+.sched_box {
+  flex: 1; /* Equal width for all columns */
+  margin-right: 10px; /* Optional margin between columns */
+}
+
+
+    .StudSched table {
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+        box-shadow: 2px 7px 8px #AADE91;
+        margin-right: 50%;
+        font-size: 10px;
+    }
+
+    .certi table {
+        border-collapse: collapse;
+        /* Remove spacing between table cells */
+        width: 100%;
+        /* Make the table width 100% of its container */
+        border: none;
+    }
+
+    .certi th,
+    td {
+        border: none;
+        /* Remove borders on table headers and cells */
+        padding: 10px;
+        /* Add padding to table cells for spacing */
+        text-align: left;
+        /* Align text to the left within cells */
+    }
+
+    .column_head {
+        background-color: #eaffe3;
+    }
+
+    .sched_box {
+        display: block;
+        margin-left: 1%;
+    }
+
+    .sched_box h2 {
+        font-size: 16px;
+    }
+
+    td {
+        font-weight: bold;
+    }
+
+    .slide_show {
+        padding: 10px;
+        width: 100%;
+        height: 550px;
+        /* Set a specific height for the slideshow */
+
+    }
+    
+    /* Style for the PDC enrollment button */
+    #enrollButton {
+        margin-top: 4%;
+        height: 60px;
+        width: 50%;
+        background-color: #59b55b; /* Green color */
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s; /* Smooth transition for background color */
+    }
+
+    /* Hover effect */
+    #enrollButton:hover {
+        background-color: #1b3b1c; /* Darker green color on hover */
+    }
+
+    /* Style for the disabled button */
+    #enrollButton[disabled] {
+        background-color: #759e76; /* Light gray color */
+        cursor: not-allowed;
+    }
+    .buttonTDC,.buttonPDC, .reschedbtn{
+        padding: 15px 30px;
+        font-size: 22px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        color: white;
+        margin: 10px;
+        width: 100%;
+        font-weight: 600;
+        background-color: green;
+    }
+    .buttonTDC:hover,.buttonPDC:hover{
+        background-color:#023302;
+         color: white;
+    }
+    .reschedbtn{
+        width: 50%;
+        background-color: #fad932;
+        color: black;
+    }    
+    .reschedbtn:hover{
+         background-color:#73641c;
+         color: white;
+    }

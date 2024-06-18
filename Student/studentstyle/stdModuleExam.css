@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}.nav_links a:nth-child(3) {
+        background-color: green;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .HamburgerButton {
+        display: none;
+    }
+
+    #Hamburger {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    #Hamburger.rotate {
+        transform: rotate(90deg);
+    }
+    .nav_student{
+        float: left;
+    width: 20%;
+    background-color: #f7fff5;
+    box-shadow: 2px 7px 8px #E4F5E4; 
+    gap: 2%;
+    margin-right: .5%;
+    top: 0; /* Stick to the top of the viewport */
+    left: 0; /* Stick to the left edge of the viewport */
+    position: fixed;
+    }
+.sessions_container{
+    margin: auto;
+      width: 100%;
+      height: 100%;
+      padding: 1%;
+      display: block;
+      border-radius: 3px;
+      background-color: #CFF1BF;
+      box-shadow: 2px 7px 8px rgba(0, 0, 0, 0.2); /* Adding shadow to the nav_bar */
+     align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+    .bodyContainer{
+        text-align: center;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        column-gap: 2%;
+    }.Mod_Ex_Container{
+        width: 100%;
+        height: 100%;
+        display:    inline-block;
+        
+    }.TDC_PDC_BOX .img_container{
+        text-align: center;
+    }
+    .sessions_container img {
+      max-width: 70%;
+      max-height: 40%;
+      border-radius: 3px;
+    }
+    .main_content{
+        width: 70%;
+        height: 90%;
+        float: left;
+        margin-left: 22%;
+    }

@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+} .hidden-column {
+        display: none;
+    }
+
+    .nav_links a:nth-child(2) {
+        background-color: green;
+        border-radius: 10px;
+        color: white;
+    }
+    .HamburgerButton {
+        display: none;
+    }
+
+    #Hamburger {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    #Hamburger.rotate {
+        transform: rotate(90deg);
+    }
+    .nav_student{
+        float: left;
+    width: 20%;
+    background-color: #f7fff5;
+    box-shadow: 2px 7px 8px #E4F5E4; 
+    gap: 2%;
+    margin-right: .5%;
+    top: 0; /* Stick to the top of the viewport */
+    left: 0; /* Stick to the left edge of the viewport */
+    position: fixed;
+    }
+    .result{
+    width: 100%;    
+    margin-top: 1%;
+   }
+   .result{
+    color:black;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 2px 7px 8px #AADE91;
+    margin-right: 50%;
+   }.main_content{
+    width: 70%;
+        height: 100%;
+        float: left;
+        margin-left: 22%;
+   }  .paybtn {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            display: flex; /* Allow the icon and text to be on the same line */
+            align-items: center; /* Vertically align icon and text */
+        }
+
+        /* Add a hover effect */
+        .paybtn:hover {
+            background-color: darkgreen;
+        }
+
+        /* Style the icon */
+        .paybtn .fas {
+            margin-right: 5px; /* Add some spacing between icon and text */
+        }
+
+        /* Hide the default border on input type submit */
+        .paybtn input[type="submit"] {
+            border: none;
+        }
