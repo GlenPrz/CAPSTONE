@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./modalsStyle/modal_signup.css?version=1">
+    <link rel="stylesheet" href="./modalsStyle/modal_contactUs.css?version=1">
+    <link href="public_html/design/general/" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+	    <title>BTS Driving school</title>
+
+</head>
+
+<body>
+    <div class="nav_bar">
+        <div class="nav_left">
+            <img src="img/bts_logo.png" class="bts_logo">
+            <h1 class="left_h1">BEST TRAINING SCHOOL</h1>
+        </div>
+
+        <div class="nav_right">
+            <nav>
+                <i class="fa fa-bars HamburgerButton" aria-hidden="true" id="Hamburger"></i>
+                <div class="nav_link" id="nav_id">
+                    <a href="Home_page.php">Home</a>
+                    <a href="aboutUs.php">About Us</a>
+                    <a href="#" id="ContactUs_nav">Contact Us</a>
+                    <a href="FAQ_page.php">FAQ</a>
+                    <a href="login.php">Log-in</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        var Hamburger = document.getElementById("Hamburger");
+        var navsbarLog = document.getElementById("nav_id");
+        var isNavVisiblelogin = false;
+
+        Hamburger.onclick = function () {
+            if (isNavVisiblelogin) {
+                hideNav();
+            } else {
+                showNav();
+            }
+        };
+
+        function hideNav() {
+            Hamburger.classList.remove("fa-times");
+            Hamburger.classList.add("fa-bars");
+            navsbarLog.style.display = "none";
+            isNavVisiblelogin = false;
+        }
+
+        function showNav() {
+            Hamburger.classList.remove("fa-bars");
+            Hamburger.classList.add("fa-times");
+            navsbarLog.style.display = "inline-block";
+            isNavVisiblelogin = true;
+        }
+
+      
+
+        function handleResize() {
+            if (window.innerWidth > 390= & window.innerWidth < 1024) {
+                hideNav();
+            } else {
+                navsbarLog.style.display = "inline-block";
+            }
+        }
+
+        // Listen for the resize event
+        window.addEventListener("resize", handleResize);
+
+        // Initially check the screen size on page load
+        handleResize();
+    </script>
+
+</body>
+
+</html>
