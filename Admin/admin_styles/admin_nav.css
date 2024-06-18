@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+.Container_nav {
+    height: 100%;
+}
+
+.nav_admin {
+    height: 250vh;
+    width: 20%;
+    height: 100%;
+    background-color:#f7fff5;
+    box-shadow: 2px 7px 8px #E4F5E4; 
+    gap: 2%;
+    margin-right: .5%;
+     top: 0; /* Stick to the top of the viewport */
+    left: 0; /* Stick to the left edge of the viewport */
+    position: fixed;
+}
+
+.logo_container {
+    width: 45%;
+    margin: auto;
+}
+
+.admin_logo {
+    margin-top: 15%;
+    width: 50px;
+    height: 70px;
+}
+
+.nav_links {
+    margin: auto;
+    width: 70%;
+    height: 100%;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: left;
+    display: block;
+    padding: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.nav_links a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.nav_links a:first-of-type {
+    margin-top: 15%;
+}

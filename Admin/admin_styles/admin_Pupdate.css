@@ -1,0 +1,477 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+   font-family: 'Inter', sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+header {
+background-color: green;
+color: #fff;
+padding: 20px;
+text-align: center;
+border-radius: 10px;
+}
+
+.Container_nav {
+  height: 100%;
+}
+
+.main_content {
+  background-color: white;
+  display: block;
+  float: left;
+  width: 70%;
+  margin-left: 22%;
+}
+.courseupdate{
+  background-color: white;
+  display: inline-block;
+  float: left;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  
+
+}
+
+.nav_links a:nth-child(4) {
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+}
+
+.imgs_db {
+  width: 350px;
+  height: 350px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.img_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 4px 2px 7px 8px #E4F5E4;
+
+}
+
+.ImgUpdate {
+  text-align: center;
+  /* Center-align content */
+}
+
+/* The Modal (background) */
+.modal_img1 {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 50px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content_img1 {
+  position: relative;
+  background-color: #f6faf5;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  height: 85%;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+/* The Close Button */
+.close_img1 {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close_img1:hover,
+.close_img1:focus {
+  color: #c31111;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header_img1 {
+  padding: 2px 16px;
+  margin-top: 3%;
+  background-color: transparent;
+  color: black;
+}
+.Cancel_Img{
+  background-color: red;
+  padding:14px 35px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left:1%;
+  font-size: 20px;
+  border: none;
+}
+.Cancel_Img:hover {
+  background-color: #520808;  
+}
+.Submit_Img{
+  background-color: green;
+  padding:14px 35px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin-left:auto;
+  margin-right: 1%;
+  font-size: 20px;
+  border: none;
+}
+.Submit_Img:hover {
+  background-color: #064706;
+}
+.modal-body_img1 {
+  padding: 2px 16px;
+  width: 100%;
+  height: 78%;
+  border-radius: 5%;
+
+}
+.modal-footer_img1 {
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.custom-file-input {
+  /* Hide the default input button */
+  display: none;
+}
+.custom-file-label {
+  /* Style the label to resemble a button */
+  display: inline-block;
+  padding: 14px 45px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Adjust the label appearance on hover */
+.custom-file-label:hover {
+  background-color: #064706;
+}
+.mySlides {
+  display: none
+}
+
+/* Slideshow container */
+.slideshow-container {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 100%x;
+}
+
+.slideshow-container img {
+  vertical-align: middle;
+  margin-left: 10%;
+}
+
+.dotters{
+  margin-top:10px;
+  text-align:center
+}
+.btn_container{
+width: 30%;
+margin: auto;
+margin-top: 10px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(23, 130, 46, 0.8);
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.Edit_btn{
+  padding:12px 35px;
+  font-size: 30px;
+  font-weight:bold;
+  border-radius: 20px;
+  background-color:  #4CAF50;
+  color:white;
+  margin-left: 25%;
+  border: none;
+
+}
+.CPost_Container{
+width: 100%;
+margin-top: 1%;
+}
+.CPost_title{
+  color:#116636;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.CPost_Ttopic{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.CPost_BDesc{
+  resize: none;
+ width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+ 
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+
+}
+.button_container{
+  display: block;
+  justify-content: end;
+}
+.button_container button{
+background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.button_container button:nth-child(2){
+background-color: red;
+margin-left: 10px;
+}
+.button_container button:nth-child(1){
+  background-color: green;
+  }
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+.container {
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 1%;
+            margin-bottom: 2%;
+            margin-right: 5%;
+            height: 100%;
+        }
+.filter{
+    display:flex;
+    column-gap: 1%;
+    margin-top:1%;
+}
+.filter label{
+    margin-bottom:1%;
+}.filter select{
+    width:50%;
+    font-size:16px;
+        
+}.filter input[type="date"],input[type="text"]{
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size:16px;
+}input[type="checkbox"]{
+   width: 20px; /* Width of the custom checkbox */
+    height: 20px; /* Height of the custom checkbox */
+}
+
+.apply{
+    width:10%;
+   background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}.filter table{
+     width: 100%;
+    max-height: 100px; /* Set a maximum height for the table */
+    overflow-y: scroll; /* Add a vertical scrollbar when content overflows */
+    border-collapse: collapse; /* Optional: collapse table borders */
+    font-size:16px;
+}table.filter th,td{
+    font-size:16px;
+}
+.consearch{
+    display:flex;
+    column-gap: 1%;
+}.consearch input[type="text"]{
+    padding:10px;
+    font-size:16px;
+    width:100%;
+}.consearch button[type="submit"]{
+     font-size:32px;
+     width:5%;
+     padding: 10px;
+     border:none;
+     background-color:white;
+     text-align:left;
+}.cancel-button{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+textarea{
+    width:90%;
+}
+

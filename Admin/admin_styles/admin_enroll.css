@@ -1,0 +1,486 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    
+}
+.nav_links a:nth-child(3) {
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+}
+
+.Container_nav {
+    height: 100%;
+}
+.BirtStudBtn {
+    margin-top:14%;
+		padding: 3px 40px;
+		background-color: #1763b0;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		font-size: 14px;
+		font-weight: 600;
+		cursor: pointer;
+		margin-left: 1%;
+		text-decoration: none;
+		text-align: center; /* Center-align the text horizontally */
+/* Adjust line-height to center vertically */
+	}
+
+	/* Hover effect */
+	.BirtStudBtn:hover {
+		background-color: #0a2847;
+	}
+.main_content{
+    margin-top: 2%;
+    height: 100%;
+    width: 100%;
+    float: left;
+    margin-left: 22%;
+    }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+        td button {
+            padding: 5px ;
+            margin: 0 3px;
+            width: 50px;
+            height: 30px;
+            font-size: 16px;
+            border-radius: 2px;
+            border: none;
+            font: inherit;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        td a{
+            padding: 5px 14px;
+            margin: 0 3px;
+            width: 100px;
+            height: 30px;
+            font-size: 16px;
+            border-radius: 2px;
+            border: none;
+            font: inherit;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .edit{
+            background-color: #f5de31;
+            color: black;
+        }
+        .edit:hover{
+            background-color: #695f14;
+            color: white;
+        }
+        .del{
+            background-color: #f72511;
+            color: white;
+        }
+        .del:hover{
+            background-color: #630f07;
+            color: white;
+        }
+        .fee{
+            background-color: #36b52f;
+            color: white;
+        }
+        .fee:hover{
+            background-color: #195416;
+            color: white;
+        }
+        
+        #take_fee_modal {
+            margin: auto;
+            padding: 2%;
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+        }
+
+
+        .modal-content {
+            background-color: #fff;
+            margin: 1px auto;
+            padding: 15px; /* Reduced padding */
+            border-radius: 5px;
+            width: 50%; /* Reduced width */
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 18px; /* Reduced font size */
+            cursor: pointer;
+        }
+
+        /* Container Styles */
+        .container {
+            padding: 10px; /* Reduced padding */
+        }
+
+        .modal_title {
+            color: green;
+        }
+
+        /* Row Styles */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 5px; /* Reduced margin */
+            width: 95%; /* Reduced width */
+        }
+
+        .inner_row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 5px; /* Reduced margin */
+            width: 260px; /* Reduced width */
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        /* Column Styles */
+        .col {
+            flex: 1;
+            padding: 3px; /* Reduced padding */
+        }
+
+        col_btn{
+            flex: 1;
+        }
+
+        /* Label Styles */
+        label {
+            display: block;
+            font-weight: bold;
+            font-size: 16px; /* Reduced font size */
+        }
+
+        /* Input Styles */
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        .data_placement {
+            width: 100%;
+            height: 40px;
+            padding: 5px; /* Reduced padding */
+            border: 1px solid #ccc;
+            border-radius: 3px; /* Reduced border radius */
+            margin-top: 3px; /* Reduced margin */
+            font-size: 16px; /* Reduced font size */
+            color: black;
+        }
+
+        .enrollmentstatus,
+        input[type="date"] {
+            width: 100%; /* Reduced width */
+            height: 40px; /* Reduced height */
+        }
+
+        input[type="number"] {
+            width: 100%;
+            height: 40px; /* Reduced height */
+        }
+
+        /* Button Styles */
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 16px; /* Reduced padding */
+            border: none;
+            border-radius: 3px; /* Reduced border radius */
+            cursor: pointer;
+            font-size: 14px; /* Reduced font size */
+        }
+
+        /* Style for the "Take Fee" button */
+        .button.fee {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Style for the "Submit" button in modal fee */
+        .submit-btn {
+            background-color: #36b52f;
+            color: white;
+            padding: 8px 32px; /* Reduced padding */
+            border: none;
+            border-radius: 6px; /* Reduced border radius */
+            cursor: pointer;
+            font-size: 18px;
+            margin: auto;
+            transition: background-color 0.3s;
+        }
+
+        /* Hover style for the "Submit" button */
+        .submit-btn:hover {
+            background-color: #195416;
+            color: white;
+        }
+
+        /* Style for the "Cancel" button */
+        .cancel-btn {
+            background-color: #f72511;
+            color: white;
+            padding: 8px 32px; /* Reduced padding */
+            border: none;
+            border-radius: 6px; /* Reduced border radius */
+            cursor: pointer;
+            font-size: 18px;
+            margin: auto;
+            transition: background-color 0.3s;
+        }
+
+        /* Hover style for the "Cancel" button */
+        .cancel-btn:hover {
+            background-color: #630f07;
+            color: white;
+        }
+
+        /* Style for the "Deny" button */
+        .Deny-btn {
+            background-color: orange;
+            color: white;
+            padding: 8px 32px; /* Reduced padding */
+            border: none;
+            border-radius: 6px; /* Reduced border radius */
+            cursor: pointer;
+            font-size: 18px;
+            margin: auto;
+            transition: background-color 0.3s;
+        }
+
+        /* Hover style for the "Cancel" button */
+        .Deny-btn:hover {
+            background-color: black;
+            color: white;
+        }
+        
+        .button-container button {
+            margin: 0 10px;
+        }
+		.button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        /* Add more CSS styles as needed to achieve the desired appearance */
+        .search_con {
+            width: 15%;
+            display: flex;
+            align-items: center; /* Align items vertically */
+            margin-bottom: 20px; /* Add spacing between the select and search input */
+        }
+
+        .select_rows {
+            padding: 2px;
+            width: 10%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            
+            margin-bottom: 0;
+            margin-right: 1%;
+        }
+
+        .search-form {
+            display: flex;
+        }
+
+        .search-input {
+            margin-right: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 0;
+            height: 30px; /* Set a fixed height for the search input */
+        }
+
+        .search-button {
+            margin: 3px 0 0 0;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            height: 40px; /* Set a fixed height for the button to match the search input */
+        }
+        .search-button:hover {
+            background-color: #073463;
+        }
+        .tableCon {
+    width: 100%;
+    max-height: 700px;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+        .Student_table {
+         width: 100%; /* Make the table take up the full width of its container */
+        border-collapse: collapse; /* Collapse table borders for a cleaner look */
+}
+.TDC_req_tbl {
+         width: 100%; /* Make the table take up the full width of its container */
+        border-collapse: collapse; /* Collapse table borders for a cleaner look */
+}
+        .OP_table {
+            height: 250px; 
+            width: 100%;
+            border-collapse: collapse;
+            overflow-x: hidden;
+            overflow-y: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .OP_table th, .OP_table td {
+            padding: 5px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .OP_table th {
+            background-color:  #007DFE;
+            color: white;
+        }
+
+        .OP_table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .OP_table td img {
+            max-width: 50px;
+            max-height: 80px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .OP_table .view-button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .OP_table .view-button:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            display: block;
+            width: 75%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 1%;
+            margin-bottom: 2%;
+            margin-right: 1%;
+}
+header {
+background-color: green;
+color: #fff;
+padding: 20px;
+text-align: center;
+border-radius: 10px;
+margin-bottom: 1%;
+}
+table {
+    margin: auto;
+border-collapse: collapse;
+width: 100%;
+border: 1px solid #ddd;
+
+}
+th {
+text-align: left;
+padding: 10px;
+font-size: 16px;
+}
+td {
+text-align: left;
+padding: 10px;
+}
+.description{
+float:right;
+margin-top: 10%;
+margin-right: 10%;
+}
+.green-icon{
+    color:green;
+}
+.pen-icon{
+    color:#A1662F;
+}
+.trash-icon{
+    color:red;
+}
+.education-icon{
+    color:black;
+}
+.select_rows{
+    font-size: 20px;
+}
+.Main-table{
+    margin-bottom: 15px;
+    color:black;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 2px 7px 8px #AADE91;
+}
+.pagination{
+    text-align: center;
+}
+.Prev_pagenation{
+    color:red;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 5px;
+    padding:20px;
+    font-family: 'Merriweather', serif;
+}
+.Next_pagenation{
+    color:green;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 5px;
+    padding:20px;
+    font-family: 'Merriweather', serif;
+}
+.Num_pagenation{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding:20px;
+}

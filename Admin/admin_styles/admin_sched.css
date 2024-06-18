@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Inter', sans-serif;
+}
+html{
+    width: 100%;
+    height: 100%;
+
+}
+header {
+background-color: green;
+color: #fff;
+padding: 20px;
+text-align: center;
+border-radius: 10px;
+}
+.Container_nav {
+    height: 100%;
+}
+.main_content {
+    display: flex;
+    width: 100%;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 100%;
+    float: left;
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 22%;
+    margin-bottom: 5%;
+}
+.nav_links a:nth-child(2){
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+}
+ table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: none;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: black;
+        }
+
+        tr:nth-child(even) {
+            
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+.description{
+float:right;
+margin-top: 5%;
+margin-right: 5%;
+}
+
+.Add_Staff{
+    background-color: green;
+	padding: auto;
+    margin: 5px;
+	color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 25%;
+    font-size: 30px;
+    border: solid black 1px;
+}
+.Add_Staff:hover{
+  background-color: #064706;
+}
+.Add_Text{
+    display: inline-block;
+}
+
+/* Modal for Add Available Schedule */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #f6faf5;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: black;
+    float: right;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: transparent;
+    color: black;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: transparent;
+    color: black;
+    display: flex;
+    justify-content: end;
+  }
+
+  /* CSS */
+  .button-19 {
+    appearance: button;
+    background-color: rgb(210, 10, 10);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 10px;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 50%;
+  }
+  
+  .button-19:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .button-19:main,
+  .button-19:focus {
+    user-select: auto;
+  }
+  
+  .button-19:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .button-19:disabled {
+    cursor: auto;
+  }
+  .green-color{
+    background-color: green;
+  }
+  .titleDate{
+    padding: 8px;
+  }
+  .titleTime{
+    padding: 8px;
+  }
+  .input_typeDate{
+    font-size: 20px;
+    margin: 10px;
+  }
+  .input_typeTime{
+    font-size: 20px;
+    margin: 10px;
+  }
+  .ScheduleTitle{
+    margin: 10px;
+    font-size: 30px;
+  }
+  .select_rows{
+    margin-bottom: 10px;
+    border: solid 1px black;
+    font-size: 20px;
+}
+.trash-icon{
+  color:red;
+}
+.pagination{
+  text-align: center;
+}
+.Prev_pagenation{
+  color:red;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 5px;
+  padding:20px;
+  font-family: 'Merriweather', serif;
+}
+.Next_pagenation{
+  color:green;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 5px;
+  padding:20px;
+  font-family: 'Merriweather', serif;
+}
+.Num_pagenation{
+  text-decoration: none;
+  color:black;
+  font-size: 20px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding:20px;
+}
+.TDC_Container{
+display: inline-block;
+width: 100%;
+
+}
+.Sched_container{
+display: inline-block;
+width: 100%;
+}/* Modal for TDC Add Available Schedule */
+    .modal_TDC {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content_TDC {
+        position: relative;
+        background-color: #f6faf5;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 20%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+    /* The Close Button */
+    .close_TDC {
+        color: black;
+        float: right;
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .close_TDC:hover,
+    .close_TDC:focus {
+        color: red;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .modal-header_TDC {
+        padding: 2px 16px;
+        background-color: transparent;
+        color: black;
+    }
+
+    .modal-body_TDC {
+        padding: 2px 16px;
+    }
+
+    .modal-footer_TDC {
+        padding: 2px 16px;
+        background-color: transparent;
+        color: black;
+        display: flex;
+        justify-content: end;
+    }.container {
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 1%;
+            margin-bottom: 2%;
+            margin-right: 5%;
+        }

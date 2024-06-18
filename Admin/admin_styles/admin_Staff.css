@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+header {
+background-color: green;
+color: #fff;
+padding: 20px;
+text-align: center;
+border-radius: 10px;
+width: 100%;
+margin-bottom: 1%;
+}
+
+.Container_nav {
+    height: 100%;
+}
+.main_content {
+    display: flex;
+    height: 100%;
+    float: left;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 22%;
+    margin-bottom: 5%;
+}
+.nav_links a:nth-child(6){
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+}
+table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: none;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: black;
+        }
+
+        tr:nth-child(even) {
+            
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+.description{
+float:right;
+margin-top: 10%;
+margin-right: 10%;
+}
+.green-icon{
+    color:green;
+}
+.pen-icon{
+    color:#A1662F;
+}
+.trash-icon{
+    color:red;
+}
+.education-icon{
+    color:black;
+}
+.select_rows{
+    padding: auto;
+    color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 25%;
+    font-size: 20px;
+}
+.pagination{
+}
+.Prev_pagenation{
+    color:red;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 5px;
+    padding:20px;
+    font-family: 'Merriweather', serif;
+}
+.Next_pagenation{
+    color:green;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 5px;
+    padding:20px;
+    font-family: 'Merriweather', serif;
+}
+.Num_pagenation{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    padding:20px;
+}
+.Add_Staff{
+    padding: auto;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 25%;
+    font-size: 20px;
+    background-color: green;
+
+}
+.Add_Staff:hover{
+  background-color: #064706;
+}
+.Cancel_SignUp {
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+  }
+  .close_SignUp_Staff {
+    color: black;
+font-size: 35px;
+font-weight: bold;
+margin-top: -10px;
+padding: 0px 6px 0px 6px;
+border-radius: 10px;
+  cursor: pointer;    
+float:right;
+white-space:nowrap;
+}
+
+.close_SignUp_Staff:hover {
+  color: #555;
+}
+.container {
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 1%;
+            margin-bottom: 2%;
+            margin-right: 5%;
+}
+.add_row{
+    display: flex;
+    column-gap: 1%;
+    width: 100%;
+}
+
+

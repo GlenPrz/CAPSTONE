@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Inter', sans-serif;
+}
+header {
+background-color: green;
+color: #fff;
+padding: 20px;
+text-align: center;
+margin-top: 1%;
+width: 100%;
+}
+
+.Container_nav {
+    height: 100%;
+}
+
+.nav_links a:nth-child(1){
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+}
+.main_content {
+     display: flex;
+    width: 100%;
+    margin-top: 2%;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 22%;
+    margin-bottom: 5%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content_barChart {
+    width: 45%;
+    margin: 10px;
+    padding: 3px;
+    height: 10%;
+}
+
+.content_PieChart {
+    width: 30%;
+    margin: 10px;
+    padding: 3px;
+    height: 10%;
+}
+
+#PieChart {
+    max-width: 100%; /* Allow the canvas to scale within its parent container */
+    height: auto; /* Maintain the aspect ratio */
+    background-color: white;
+}
+
+
+.Second_content{
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.content_NumberStudent{
+    width: 45%;
+    margin: 10px;
+    padding: 3px;
+    height: 10%;
+
+}
+.content_StudentExamRate{
+    width: 45%;
+    margin: 10px;
+    padding: 3px;
+    height: 10%;
+}.content_total_student{
+    padding: 20px;
+    display: flex;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    column-gap: 5%;
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+.content_total_student:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+.content_Student_Address{
+    padding: 10px;
+    display: block;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+.demographics{
+    display: flex;
+    column-gap: 1%;
+    margin-top: 2%;
+    width: 100%;
+    padding: 20px;
+}.content_Student_Gender{
+    display: flex;
+    width: 25%;
+}.feedback{
+    display: flex;
+    column-gap: 1%;
+    margin-top: 2%;
+    width: 100%;
+    padding: 50px;
+}.content_Student_Feedback_Q1{
+    display: block;
+    width: 50%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}.feedgraph{
+    display: block;
+    width: 50%; 
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}.examres{
+     display: flex;
+    column-gap: 1%;
+    margin-top: 2%;
+    width: 100%;
+    padding: 50px;
+}.exam{
+    display: block;
+    width: 50%;
+    height: 100%;
+    padding: 10px;   
+}
+.Studentlist{
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: block;
+    width: 100%;
+    height: 300px;
+    overflow-x: auto; /* Enable horizontal scrolling if the table overflows */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
+}
+.Studentlist table{
+    width: 100%;  
+    text-align: center;
+    padding: 10px;
+}
+.Student_table {
+    width: 100%;
+    height: 20px; /* Set the maximum height for the table */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+.Student_table th, .Student_table td {
+    border: 1px solid #ddd; /* Add borders to table cells */
+    padding: 8px; /* Add padding to table cells */
+    text-align: left; /* Align text to the left within cells */
+}
+
+.Student_table th {
+    background-color: #f2f2f2; /* Background color for header cells */
+}
+        .edit{
+
+            color: black;
+            font-size: 25px;
+        }
+        .edit:hover{
+            background-color: green;
+            padding: 2px;
+            color: white;
+        }
+.rate{
+    display: flex;
+    column-gap: 1%;
+    margin-top: 2%;
+    width: 100%; 
+    padding: 50px;
+}.rategraph{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 50%;     
+}.ratetb{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 50%; 
+}.ratetb table {
+    padding: 10px;
+    text-align: center;
+    width: 100%; 
+}.totalstd_div i{
+font-size: 60px;
+color: green;
+}
+.totalstd_div{
+display: flex;
+}.totalstd{
+    display: block;
+    color: black;
+}
+.tdc{
+ width: 100%;
+max-height: 300px; /* Set the maximum height for the table */
+overflow-y: auto; /* Enable vertical scrolling */
+border-collapse: collapse; /* Collapse table borders */   
+}.TDC_result{
+  width: 30%; 
+  margin-top: 5%; 
+}.TDC_result table{
+    width: 100%;
+    text-align: left;
+}.TDC_result th, .TDC_result td {
+    padding: 8px; /* Add padding to table cells */
+    text-align: left; /* Align text to the left within cells */
+}.TDC_result th {
+width: 30%;
+}.std_TDC_res{
+    background-color: white;
+     border: none;
+    color: green;
+    float: right;
+    font-size: 16px;
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+.barDS-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.barDS-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.barDS-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.barDS-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.barDS-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}.Overall{
+    width: 50%;
+}.consearch{
+    display:flex;
+    column-gap: 1%;
+    margin-bottom:1%;
+}.consearch input[type="text"]{
+    padding:10px;
+    background-color:whitesmoke;
+    font-size:16px;
+    width:100%;
+}.consearch button[type="submit"]{
+     font-size:32px;
+     width:5%;
+     padding: 10px;
+     border:none;
+     background-color:white;
+     text-align:left;
+}
+.star{
+    color:#ffcc00;
+    font-size:10px;
+}
+.maintitle header{
+   background-color: green;
+color: #fff;
+padding: 20px;
+text-align: center;
+margin-top: 1%;
+width: 100%;
+display:flex;
+column-gap: 75%;
+}
+.maintitle{
+width: 100%;
+}
+.maintitle i{
+    font-size:32px;
+    color:white;
+}

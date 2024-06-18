@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+     font-family: 'Inter', sans-serif;
+}
+
+.Container_nav {
+    height: 100%;
+}
+header {
+background-color: green;
+color: #fff;
+padding: 20px;
+text-align: center;
+border-radius: 10px;
+margin-bottom: 2%;
+}
+.modalhead {
+background-color: green;
+color: #fff;
+padding: 10px;
+text-align: center;
+border-radius: 10px;
+margin-bottom: 2%;
+margin-top: 2%;
+}
+.main_content {
+    display: flex;
+    float: left;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 22%;
+    margin-bottom: 5%;
+}
+.nav_links a:nth-child(5){
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+}
+table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: none;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: black;
+        }
+
+        tr:nth-child(even) {
+            
+        }
+.description{
+float:right;
+margin-top: 10%;
+margin-right: 10%;
+}
+.description1{
+font-size: 25px;
+float:left;
+padding-right: 50%;
+margin-top: 5%;
+margin-left: 5%;
+margin-bottom: 3%;
+}
+.container {
+ width: 100%;
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ margin-top: 1%;
+ margin-bottom: 2%;
+ margin-right: 5%;
+        }
+
+/* Search bar and buttons styling */
+        .search-bar {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        /* Combo box styling */
+        .sort-combo {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        .search{
+            max-width: 1000px;
+            display: flex;
+            float: left;
+            column-gap: 1%;
+        }
+/* Style for the modal container */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Style for the modal content */
+.modal-content {
+    background-color: #fff;
+    margin: auto; /* Center the modal horizontally and vertically */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 80%; /* Adjust the maximum width as needed */
+}
+
+/* Style for the close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Style for labels */
+label {
+    font-weight: bold;
+}
+
+/* Style for paragraphs inside the modal */
+p {
+    margin: 5px 0;
+}
+/* Style for the modal container */
+.modal {
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Style for the modal content */
+.modal-content p,label{
+    margin-bottom: 1%;
+}
+.modal-content p{
+    margin-left: 1%;
+}
+.modal-content label{
+    width: 50%;
+    font-size: 16px;
+    color: green;
+     margin-left: 3%;
+}
+
+/* Style for the close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 100px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Style for the title */
+.modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+	/* CSS for the "View" button */
+	.view-button {
+		display: inline-block;
+		padding: 5px 10px;
+		background-color: #007bff; /* Blue color */
+		color: #fff; /* Text color */
+		text-decoration: none;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+
+	.view-button:hover {
+		background-color: #0056b3; /* Darker blue color on hover */
+	}
+	.TBheader{
+	background-color: whitesmoke;
+	}
+	.TBheader th{
+	text-align: center;
+	}
+	#view_report_modal {
+		margin: auto;
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+	}
+
+	.modal-content {
+		background-color: #fff;
+		margin: 10% auto; /* Center the modal vertically with a bit more margin */
+		padding: 15px; /* Increased padding for better spacing */
+		border-radius: 10px; /* Rounded corners */
+		width: 60%; /* Adjusted width */
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+		position: relative; /* Added relative positioning */
+	}
+
+	.close {
+		position: absolute;
+		top: 10px; /* Adjusted top position */
+		right: 10px; /* Adjusted right position */
+		font-size: 20px; /* Increased font size for better visibility */
+		cursor: pointer;
+	}
+  
+
+    label {
+        font-weight: bold;
+        margin-right: 5px;
+        display: inline-block;
+        width: 20%; /* Adjust the width as needed */
+    }
+
+    p {
+        margin: 0;
+        display: inline;
+    }
+.filter{
+    display:flex;
+    column-gap: 1%;
+    margin-top:1%;
+}
+.filter label{
+    margin-bottom:1%;
+}.filter select{
+    width:50%;
+    font-size:16px;
+        
+}.filter input[type="date"],input[type="text"]{
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size:16px;
+}input[type="checkbox"]{
+   width: 20px; /* Width of the custom checkbox */
+    height: 20px; /* Height of the custom checkbox */
+}
+
+.apply{
+    width:10%;
+   background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}

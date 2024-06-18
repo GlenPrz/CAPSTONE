@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+.Container_nav {
+    height: 100%;
+    outline: 2px solid red;
+}
+table {
+margin-top: 5%;
+border-collapse: collapse;
+width: 100%;
+box-shadow: 2px 7px 8px #AADE91;
+}
+
+th, td {
+text-align: left;
+padding: 16px;
+}
+.description{
+float:right;
+margin-top: 10%;
+margin-right: 10%;
+}
+.green-icon{
+    color:green;
+}
+.pen-icon{
+    color:#A1662F;
+}
+.trash-icon{
+    color:red;
+}
+.education-icon{
+    color:black;
+}
+.select_rows{
+    margin-bottom: 10px;
+    border: solid 1px black;
+    font-size: 20px;
+}
+.Main-table{
+    margin-bottom: 15px;
+    box-shadow: 2px 7px 8px #AADE91;
+    color:black;
+    font-size: 20px;
+    text-decoration: none;
+}
+.pagination{
+    text-align: center;
+}
+.Prev_pagenation{
+    color:red;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 5px;
+    padding:20px;
+    font-family: 'Merriweather', serif;
+}
+.Next_pagenation{
+    color:green;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 5px;
+    padding:20px;
+    font-family: 'Merriweather', serif;
+}
+.Num_pagenation{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding:20px;
+}
+.Add_Staff{
+    background-color: green;
+	padding: auto;
+    margin: 5px;
+	color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 25%;
+    font-size: 30px;
+    border: solid black 1px;
+}
+.Add_Staff:hover{
+  background-color: #064706;
+}
+.Cancel_SignUp {
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+  }
+  .close_SignUp_Staff {
+    color: black;
+font-size: 35px;
+font-weight: bold;
+margin-top: -10px;
+padding: 0px 6px 0px 6px;
+border-radius: 10px;
+  cursor: pointer;    
+float:right;
+white-space:nowrap;
+}
+
+.close_SignUp_Staff:hover {
+  color: #555;
+}
